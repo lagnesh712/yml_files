@@ -1,0 +1,11 @@
+kind: Pod
+apiVersion: v1 
+metadata:
+  name: pod1
+  labels:
+    app: myapp
+spec:
+  containers:
+  - name: c1
+    image: ubuntu
+    command: ["/bin/bash", "-c", "sleep 15000"]
